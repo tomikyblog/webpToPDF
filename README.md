@@ -1,5 +1,7 @@
 # webpToPDF
-Script to consolidate images in webp format into a single PDF file.
+Script to consolidate images in webp/jpeg/jpg/png format into a single PDF file.
+
+(At first I just wanted to convert webp format images to PDF, but it was unexpectedly useful and I made it possible to do it with non-webp images as well.)
 
 ## Requirement
 - node
