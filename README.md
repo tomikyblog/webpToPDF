@@ -15,7 +15,7 @@ $ cd webpToPDF
 $ npm install
 ```
 
-1. Create directories "in" and "out".
+1. Create directories "in" and "out" and "out/jpeg".
 2. Put the image in the "in" folder in the webp format that you want to make into a PDF.
 3. Running `node index.js` will create an image in jpeg format in "out/jpeg".
 4. Running `node index2.js` will create a single PDF file "output.pdf" in the "out" directory by aggregating the images in "out/jpeg".
