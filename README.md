@@ -8,6 +8,13 @@ Script to consolidate images in webp format into a single PDF file.
 - pdfkit
 
 ## usage
+0. git clone & npm install
+```
+$ git clone https://github.com/tomikyblog/webpToPDF.git
+$ cd webpToPDF
+$ npm install
+```
+
 1. Create directories "in" and "out".
 2. Put the image in the "in" folder in the webp format that you want to make into a PDF.
 3. Running `node index.js` will create an image in jpeg format in "out/jpeg".
