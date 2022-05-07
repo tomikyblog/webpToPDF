@@ -9,12 +9,16 @@ function webpToJpeg () {
       const file = files[index]
       const position = file.lastIndexOf('.')
       const ext = file.slice(position + 1)
-      ext.toLowerCase()
+      const lowerExt = ext.toLowerCase()
 
-      if (allow_exts.indexOf(ext) !== -1) {
+      if (allow_exts.indexOf(lowerExt) !== -1) {
         const inpath = `./in/${file}`
         const outpath = `./out/jpeg/${file.split('.')[0]}.jpeg`
-        sharp(inpath).toFile(outpath)
+        if (lowerExt === 'jpg'　|| lowerExt === 'jpeg') {
+          fs.copyFileSync(inpath, outpath)
+        } else {
+          sharp(inpath).toFile(outpath)
+        }
       }
     }
     resolve()
