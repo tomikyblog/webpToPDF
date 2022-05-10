@@ -24,3 +24,7 @@ $ npm install
 5. Running `node index3.js` will remove "in" and "out/jpeg" images.
 
 I really wanted to write it in a smart way with synchronous processing, but it was beyond my ability to do so, so I decided to execute it at the prompt after each process was completed.
+
+## License
+
+webpToPDF is released under the [MIT License.](https://opensource.org/licenses/MIT)
